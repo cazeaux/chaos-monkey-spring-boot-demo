@@ -6,5 +6,6 @@ chaos:
       exceptionsActive: true
       killApplicationActive: true
     watcher:
+      repository: true
       restController: true
       service: true
