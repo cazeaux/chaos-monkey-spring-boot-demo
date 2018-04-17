@@ -1,0 +1,9 @@
+chaos:
+  monkey:
+    assaults:
+      latencyActive: true
+      level: 1
+    exceptionsActive: true
+    watcher:
+      restController: true
+      service: true
