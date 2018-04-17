@@ -5,6 +5,10 @@ A Spring Boot 2 demo using [codecentric's chaos-monkey-spring-demo](https://gith
 > The best place on earth is…production!
 Josh Long
 
+## Chaos Configuration
+
+See application.yml
+
 ## Run
 
     java -jar your-app.jar --spring.profiles.active=chaos-monkey

@@ -3,7 +3,8 @@ chaos:
     assaults:
       latencyActive: true
       level: 1
-    exceptionsActive: true
+      exceptionsActive: true
+      killApplicationActive: true
     watcher:
       restController: true
       service: true
