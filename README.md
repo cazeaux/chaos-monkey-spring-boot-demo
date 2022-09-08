@@ -24,3 +24,7 @@ See application.yml
 To push the image to local kind cluster
 
     kind load docker-image chaos-monkey-spring-boot-demo:0.0.2 --name my-cluster
+
+## Pre-built image
+
+    docker pull scazeaux/chaos-monkey-spring-boot-demo 
