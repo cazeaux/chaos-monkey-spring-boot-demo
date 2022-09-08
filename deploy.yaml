@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-demo
+  template:
+    metadata:
+      labels:
+        app: spring-boot-demo
+      annotations:
+        prometheus.io/scrape: "false"
+        sidecar.istio.io/inject: "false"
+    spec:
+      #   serviceAccountName: spring-boot-chaos-sa
+      containers:
+      - name: springboot
+        image: chaos-monkey-spring-boot-demo:0.0.1-SNAPSHOT
+        resources:
+          limits:
+            cpu: 500m
+            memory: 1000Mi
+          requests:
+            cpu: 100m
+            memory: 300Mi
+
